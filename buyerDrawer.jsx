@@ -305,7 +305,7 @@ const NDATab = ({ buyer }) => (
           <TimelineDot tone="accent" icon="send"/>
           <div>
             <div style={{ fontWeight: 500 }}>NDA dispatched · pre-filled "Northbrook Industries Inc."</div>
-            <div style={{ color: 'var(--text-3)', fontSize: 11 }}>20 May 11:04 EDT · sent by Jeremy Pak</div>
+            <div style={{ color: 'var(--text-3)', fontSize: 11 }}>20 May 11:04 EDT · sent by Alex Morgan</div>
           </div>
           <TimelineDot tone="info" icon="eye"/>
           <div>
@@ -362,9 +362,9 @@ const TimelineDot = ({ tone, icon, pulse }) => (
 const NotesTab = () => (
   <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
     {[
-      { author: 'Jeremy Pak', when: '23 May 2026 · 15:42', body: 'Spoke with James briefly at the IPF dinner. He flagged genuine interest, said to expect a reply early this week. Mentioned Eleanor would actually run it.' },
-      { author: 'Jeremy Pak', when: '19 May 2026 · 09:08', body: 'Outbound E3 looked good — tightened the angle on the cross-border buyer base. Eleanor opened E2, no reply yet.' },
-      { author: 'Jeremy Pak', when: '14 May 2026 · 11:20', body: 'Initial outreach approved. James + Eleanor + Rohan look like the right cascade. Catherine has no verified email — will park.' },
+      { author: 'Alex Morgan', when: '23 May 2026 · 15:42', body: 'Spoke with James briefly at the IPF dinner. He flagged genuine interest, said to expect a reply early this week. Mentioned Eleanor would actually run it.' },
+      { author: 'Alex Morgan', when: '19 May 2026 · 09:08', body: 'Outbound E3 looked good — tightened the angle on the cross-border buyer base. Eleanor opened E2, no reply yet.' },
+      { author: 'Alex Morgan', when: '14 May 2026 · 11:20', body: 'Initial outreach approved. James + Eleanor + Rohan look like the right cascade. Catherine has no verified email — will park.' },
     ].map((n, i) => (
       <div key={i} style={{
         background: 'var(--surface)', border: '1px solid var(--border)',
@@ -389,10 +389,10 @@ const NotesTab = () => (
 const AuditTab = () => {
   const events = [
     { t: '24 May · 11:32', evt: 'Inbound reply received', src: 'Apollo IMAP', body: 'From: j.holloway@arborfield.co.uk · classified Positive Interest 94%' },
-    { t: '19 May · 09:11', evt: 'E3 dispatched · James Holloway', src: 'Apollo send', body: 'Template AUR-E3-v2, edited by Jeremy Pak (3 inline edits)' },
+    { t: '19 May · 09:11', evt: 'E3 dispatched · James Holloway', src: 'Apollo send', body: 'Template AUR-E3-v2, edited by Alex Morgan (3 inline edits)' },
     { t: '17 May · 09:02', evt: 'E2 dispatched · Eleanor Whitmore', src: 'Apollo send', body: 'Template AUR-E2-v2, advisor-approved at 16 May 17:22 NZST' },
     { t: '16 May · 09:00', evt: 'E1 dispatched · Rohan Mehta', src: 'Apollo send', body: 'Cadence offset T+2 from Eleanor' },
-    { t: '14 May · 09:00', evt: 'E1 dispatched · James Holloway, Eleanor Whitmore', src: 'Apollo send', body: 'Persona rank confirmed by Jeremy Pak at 13 May 14:10 NZST' },
+    { t: '14 May · 09:00', evt: 'E1 dispatched · James Holloway, Eleanor Whitmore', src: 'Apollo send', body: 'Persona rank confirmed by Alex Morgan at 13 May 14:10 NZST' },
     { t: '13 May · 14:10', evt: 'Persona ranking confirmed', src: 'HITL', body: 'Agent suggested 1: James, 2: Eleanor, 3: Rohan, 4: Priya, 5: Catherine' },
     { t: '13 May · 13:55', evt: 'Enrichment waterfall complete', src: 'Agent', body: 'RocketReach + Apollo + Hunter; 4 of 5 contacts verified, Catherine flagged' },
     { t: '13 May · 13:42', evt: 'Buyer ingested', src: 'Import', body: 'Source: comparables.ai · joined 5 contacts on entity name (fuzzy)' },

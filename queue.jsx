@@ -168,7 +168,7 @@ const DraftEditor = ({ q, status, onMark }) => {
           display: 'grid', gridTemplateColumns: '60px 1fr', gap: '4px 12px',
         }}>
           <span style={{ color: 'var(--text-3)' }}>From</span>
-          <span className="mono" style={{ color: 'var(--text)' }}>Jeremy Pak &lt;outreach@velocitycapital.co.nz&gt;</span>
+          <span className="mono" style={{ color: 'var(--text)' }}>Alex Morgan &lt;outreach@example.com&gt;</span>
           <span style={{ color: 'var(--text-3)' }}>To</span>
           <span className="mono" style={{ color: 'var(--text)' }}>{recipientFor(q)}</span>
           <span style={{ color: 'var(--text-3)' }}>Subject</span>
@@ -237,7 +237,7 @@ const DraftEditor = ({ q, status, onMark }) => {
           <MergeRow k="{buyer_company}" v={q.buyer}/>
           <MergeRow k="{buyer_country}" v={q.country}/>
           <MergeRow k="{mandate_name}" v={q.mandateName}/>
-          <MergeRow k="{sender_first_name}" v="Jeremy"/>
+          <MergeRow k="{sender_first_name}" v="Alex"/>
           <MergeRow k="{sender_signature}" v="(rich-text, mandate-config)"/>
         </div>
       </details>
@@ -279,15 +279,14 @@ function buildEmailBody(q) {
   if (q.step === 'E1') {
     return `${first} —
 
-I lead M&A advisory at Velocity Capital, a boutique transaction firm based in NZ. We are running a confidential sell-side process for a profitable, growth-stage specialty foods business — high margins, multi-channel distribution, and a 7-year compounding revenue track record.
+I lead M&A advisory at a boutique transaction firm based in NZ. We are running a confidential sell-side process for a profitable, growth-stage specialty foods business — high margins, multi-channel distribution, and a 7-year compounding revenue track record.
 
 The vendor's profile sits squarely within ${q.buyer}'s stated acquisition criteria, and we believe an introductory conversation could be worthwhile.
 
 If of interest, I'm happy to share an Information Flyer and an NDA. No tracked links, no attachments in this note — just a quick yes/no on whether the documentation would be welcome.
 
 Best,
-Jeremy Pak
-Velocity Capital | velocitycapital.co.nz`;
+Alex Morgan`;
   }
   if (q.step === 'E2') {
     return `${first} —
@@ -297,8 +296,7 @@ Following up on my note from earlier this week. The vendor is a profitable speci
 Happy to send across, or to step through the strategic rationale in a 15-minute call.
 
 Best,
-Jeremy Pak
-Velocity Capital`;
+Alex Morgan`;
   }
   if (q.step === 'E3') {
     return `${first} —
@@ -311,7 +309,7 @@ Circling back with a sharper angle. We've had positive engagement from a handful
 Worth fifteen minutes?
 
 Best,
-Jeremy Pak`;
+Alex Morgan`;
   }
   return `${first} —
 
@@ -320,7 +318,7 @@ Final note from me on this opportunity — process is moving and I want to make 
 If now isn't the right time, no problem — happy to circle back on the next mandate. Either way, a brief reply would be appreciated so I can update our files.
 
 Best,
-Jeremy Pak`;
+Alex Morgan`;
 }
 
 function recipientFor(q) {

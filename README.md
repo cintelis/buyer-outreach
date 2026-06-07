@@ -1,4 +1,4 @@
-# Velocity Capital · Buyer Outreach Platform
+# Buyer Outreach Platform
 
 A **no-build, client-side React prototype** of an M&A buyer-outreach / sell-side
 workflow tool. It demos the full lifecycle of a sell-side mandate: *mandates →

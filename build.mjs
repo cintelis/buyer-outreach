@@ -109,7 +109,7 @@ function htmlFor() {
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-  <title>Velocity Capital · Buyer Outreach Platform</title>
+  <title>Buyer Outreach Platform</title>
   <meta name="robots" content="noindex"/>
   <meta name="description" content="Buyer Outreach Platform — interactive front-end demonstration (no backend)."/>
   <link rel="icon" type="image/png" sizes="192x192" href="assets/velocity-favicon-192.png"/>
@@ -127,7 +127,7 @@ ${SCRIPTS.map((s) => `  <script defer src="${s.replace(/\.jsx$/, '.js')}?v=${v}"
 `;
 }
 
-// Static brand assets (real Velocity Capital logo + favicons) live in assets/
+// Static brand assets (logo + favicons) live in assets/
 // and are copied verbatim into dist/assets/.
 async function copyAssets() {
   await cp('assets', path.join(OUT, 'assets'), { recursive: true });

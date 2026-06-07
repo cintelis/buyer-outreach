@@ -83,7 +83,7 @@ const Triage = ({ onConfirm, onClose, contextBuyerId }) => {
               {[
                 { e: 'E3', when: '19 May 09:11 NZST', preview: 'Circling back with a sharper angle…' },
                 { e: 'E2', when: '17 May 09:08 NZST', preview: 'Following up on my note…' },
-                { e: 'E1', when: '14 May 09:00 NZST', preview: 'I lead M&A advisory at Velocity Capital…' },
+                { e: 'E1', when: '14 May 09:00 NZST', preview: 'I lead M&A advisory at our firm…' },
               ].map(s => (
                 <div key={s.e} style={{
                   padding: '6px 0', borderBottom: '1px solid var(--hairline)',

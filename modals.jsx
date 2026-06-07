@@ -4,8 +4,8 @@
 const SetupModal = ({ onClose, onCreated }) => {
   const [step, setStep] = React.useState(1);
   const [name, setName] = React.useState('');
-  const [sender, setSender] = React.useState('outreach@velocitycapital.co.nz');
-  const [senderDisplay, setSenderDisplay] = React.useState('Jeremy Pak');
+  const [sender, setSender] = React.useState('outreach@example.com');
+  const [senderDisplay, setSenderDisplay] = React.useState('Alex Morgan');
   const [template, setTemplate] = React.useState('aurora-specialty-foods-v2');
   const [authoriser, setAuthoriser] = React.useState('Olivia Park');
   const [authEmail, setAuthEmail] = React.useState('olivia.park@auroraclient.co.nz');
@@ -104,9 +104,9 @@ const SetupModal = ({ onClose, onCreated }) => {
                 border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)',
                 fontSize: 12, color: 'var(--text-2)', lineHeight: 1.6,
               }}>
-                <div style={{ fontWeight: 500, color: 'var(--text)' }}>Jeremy Pak</div>
-                <div>Managing Director, Velocity Capital</div>
-                <div className="mono" style={{ fontSize: 11 }}>jeremy@velocitycapital.co.nz · +64 27 555 0188</div>
+                <div style={{ fontWeight: 500, color: 'var(--text)' }}>Alex Morgan</div>
+                <div>Managing Director</div>
+                <div className="mono" style={{ fontSize: 11 }}>alex@example.com · +64 27 555 0188</div>
                 <div style={{ marginTop: 4, color: 'var(--text-3)', fontStyle: 'italic', fontFamily: 'var(--font-serif)' }}>
                   Strategic guidance, global reach.
                 </div>

@@ -152,16 +152,16 @@ const App = () => {
   };
 
   // ----- Breadcrumb -----
-  let breadcrumb = ['Velocity Capital'];
-  if (nav === 'overview') breadcrumb = ['Velocity Capital', 'Overview'];
-  else if (nav === 'queue') breadcrumb = ['Velocity Capital', 'Review queue'];
-  else if (nav === 'triage') breadcrumb = ['Velocity Capital', 'Reply triage'];
-  else if (nav === 'nda') breadcrumb = ['Velocity Capital', 'NDA workflow'];
-  else if (nav === 'enrichment') breadcrumb = ['Velocity Capital', 'Enrichment'];
-  else if (nav === 'mandates') breadcrumb = ['Velocity Capital', 'Mandates'];
+  let breadcrumb = ['Buyer Outreach Platform'];
+  if (nav === 'overview') breadcrumb = ['Buyer Outreach Platform', 'Overview'];
+  else if (nav === 'queue') breadcrumb = ['Buyer Outreach Platform', 'Review queue'];
+  else if (nav === 'triage') breadcrumb = ['Buyer Outreach Platform', 'Reply triage'];
+  else if (nav === 'nda') breadcrumb = ['Buyer Outreach Platform', 'NDA workflow'];
+  else if (nav === 'enrichment') breadcrumb = ['Buyer Outreach Platform', 'Enrichment'];
+  else if (nav === 'mandates') breadcrumb = ['Buyer Outreach Platform', 'Mandates'];
   else if (nav.startsWith('mandate-')) {
     const m = window.VC.MANDATES.find(x => x.id === nav.replace('mandate-', ''));
-    breadcrumb = ['Velocity Capital', 'Mandates', m?.name || 'Mandate'];
+    breadcrumb = ['Buyer Outreach Platform', 'Mandates', m?.name || 'Mandate'];
   }
 
   // ----- Current screen -----

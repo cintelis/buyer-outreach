@@ -308,12 +308,12 @@ const NDATimeline = ({ r }) => (
       display: 'grid', gridTemplateColumns: '120px 1fr', gap: '10px 14px', fontSize: 12,
     }}>
       <span className="mono" style={{ color: 'var(--text-3)' }}>20 May 11:04</span>
-      <span><b>NDA dispatched</b> · pre-filled "{r.buyer}" · sent by Jeremy Pak</span>
+      <span><b>NDA dispatched</b> · pre-filled "{r.buyer}" · sent by Alex Morgan</span>
       <span className="mono" style={{ color: 'var(--text-3)' }}>20 May 14:22</span>
       <span>Opened by recipient · IP geolocated to {r.buyer.includes('Northbrook') ? 'Toronto, CA' : 'London, GB'}</span>
       {r.path === 'wetink' && <>
         <span className="mono" style={{ color: 'var(--text-3)' }}>21 May 09:38</span>
-        <span><b>Wet-ink PDF uploaded by Jeremy</b> · OCR diff vs template — 0 deltas</span>
+        <span><b>Wet-ink PDF uploaded by Alex</b> · OCR diff vs template — 0 deltas</span>
       </>}
       {r.path === 'electronic' && <>
         <span className="mono" style={{ color: 'var(--text-3)' }}>{r.buyerSignedAt || '21 May 16:42'}</span>

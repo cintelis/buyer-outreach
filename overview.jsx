@@ -16,7 +16,7 @@ const Overview = ({ goto }) => {
     <div className="page">
       <SectionHeader
         eyebrow="Tuesday, 26 May 2026"
-        title={<span>Good morning, Jeremy <span className="serif" style={{ fontStyle: 'italic', color: 'var(--text-2)', fontWeight: 400 }}>—</span> <span style={{ color: 'var(--text-2)', fontWeight: 400 }}>here's where things stand.</span></span>}
+        title={<span>Good morning, Alex <span className="serif" style={{ fontStyle: 'italic', color: 'var(--text-2)', fontWeight: 400 }}>—</span> <span style={{ color: 'var(--text-2)', fontWeight: 400 }}>here's where things stand.</span></span>}
         right={
           <>
             <Btn size="sm" icon="grid">All views</Btn>

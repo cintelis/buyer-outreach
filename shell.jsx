@@ -32,11 +32,11 @@ const Sidebar = ({ nav, setNav, badges, onNewMandate, onDirectNda, mobileOpen, o
         padding: '4px 6px', cursor: 'pointer',
         textAlign: 'left',
       }}>
-        {/* Real Velocity Capital wordmark (teal on transparent) */}
+        {/* Brand wordmark (teal on transparent) */}
         <img
           className="brand-logo"
           src="assets/velocity-logo-dark.png"
-          alt="Velocity Capital"
+          alt="Buyer Outreach Platform"
           style={{ height: 24, width: 'auto', maxWidth: 184, display: 'block' }}
         />
         <div style={{ fontSize: 10, color: 'var(--text-3)', letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 500, paddingLeft: 2 }}>
@@ -128,9 +128,9 @@ const Sidebar = ({ nav, setNav, badges, onNewMandate, onDirectNda, mobileOpen, o
         padding: '8px 6px', borderTop: '1px solid var(--border)',
         margin: '0 -10px -10px', paddingLeft: 12, paddingBottom: 14,
       }}>
-        <Avatar initials="JP" size={26} tone="brass"/>
+        <Avatar initials="AM" size={26} tone="brass"/>
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontSize: 12, fontWeight: 500, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Jeremy Pak</div>
+          <div style={{ fontSize: 12, fontWeight: 500, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Alex Morgan</div>
           <div style={{ fontSize: 10.5, color: 'var(--text-3)' }}>Lead advisor</div>
         </div>
         <Icon name="settings" size={13} style={{ color: 'var(--text-3)' }}/>

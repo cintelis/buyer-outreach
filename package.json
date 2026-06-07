@@ -2,7 +2,7 @@
   "name": "buyer-outreach-platform",
   "version": "1.0.0",
   "private": true,
-  "description": "Velocity Capital · Buyer Outreach Platform — front-end demonstration",
+  "description": "Buyer Outreach Platform — front-end demonstration",
   "type": "module",
   "scripts": {
     "build": "node build.mjs",

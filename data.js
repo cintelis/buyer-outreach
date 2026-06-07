@@ -1,4 +1,4 @@
-// Mock data for Velocity Capital buyer outreach platform.
+// Mock data for the buyer outreach platform.
 // Multi-mandate, with one "hero" mandate (Aurora) wired for the demo flow.
 
 // ----- LIFECYCLE STATES -----
@@ -33,7 +33,7 @@ const MANDATES = [
     sector: 'Specialty Food Manufacturing',
     rev: 'NZ$42m',
     ebitda: 'NZ$8.1m',
-    advisor: 'Jeremy Pak',
+    advisor: 'Alex Morgan',
     opened: '14 Apr 2026',
     status: 'Active',
     accent: 'accent',
@@ -57,7 +57,7 @@ const MANDATES = [
     sector: 'Industrial Distribution',
     rev: 'NZ$68m',
     ebitda: 'NZ$11.4m',
-    advisor: 'Jeremy Pak',
+    advisor: 'Alex Morgan',
     opened: '02 Mar 2026',
     status: 'Active',
     accent: 'brass',
@@ -81,7 +81,7 @@ const MANDATES = [
     sector: 'B2B SaaS — Logistics',
     rev: 'NZ$14m ARR',
     ebitda: 'NZ$3.2m',
-    advisor: 'Jeremy Pak',
+    advisor: 'Alex Morgan',
     opened: '21 Apr 2026',
     status: 'Active',
     accent: 'info',
@@ -105,7 +105,7 @@ const MANDATES = [
     sector: 'Horticulture & Agritech',
     rev: 'NZ$28m',
     ebitda: 'NZ$5.7m',
-    advisor: 'Jeremy Pak',
+    advisor: 'Alex Morgan',
     opened: '08 May 2026',
     status: 'Active',
     accent: 'pos',
@@ -129,7 +129,7 @@ const MANDATES = [
     sector: 'Marine Services',
     rev: 'NZ$22m',
     ebitda: 'NZ$4.4m',
-    advisor: 'Jeremy Pak',
+    advisor: 'Alex Morgan',
     opened: '12 Nov 2025',
     status: 'On Hold',
     accent: 'neutral',
@@ -497,11 +497,11 @@ const HERO_REPLY = {
   contactId: 'arborfield-james-holloway',
   buyerId: 'b-arborfield',
   from: 'James Holloway <j.holloway@arborfield.co.uk>',
-  to: 'Jeremy Pak <outreach@velocitycapital.co.nz>',
+  to: 'Alex Morgan <outreach@example.com>',
   subject: 'RE: Strategic opportunity — premium specialty food manufacturing, NZ',
   received: '24 May 2026, 11:32 BST',
   thread: 'AUR-2026 / Arborfield Holdings / E3',
-  body: `Jeremy,
+  body: `Alex,
 
 Thank you for the introduction — apologies for the delayed response, we've been heads-down on a portfolio refresh this past month.
 
@@ -568,7 +568,7 @@ const EMAIL_QUEUE = [
     sendAt: '21 May 09:00 SGT',
     in: '1h 24min',
     subject: 'Strategic opportunity — premium specialty food manufacturing, NZ',
-    preview: 'Wei Lin — I lead M&A advisory at Velocity Capital. We are running a confidential sell-side process for a profitable specialty foods…',
+    preview: 'Wei Lin — I lead M&A advisory at our firm. We are running a confidential sell-side process for a profitable specialty foods…',
     flagged: false,
     edited: true,
   },
@@ -649,7 +649,7 @@ const EMAIL_QUEUE = [
     sendAt: '21 May 09:00 AEST',
     in: '6h 24min',
     subject: 'Strategic opportunity — industrial distribution, NZ',
-    preview: 'Sarah — Velocity Capital is running a confidential sell-side process for a market-leading industrial distribution business in NZ…',
+    preview: 'Sarah — our firm is running a confidential sell-side process for a market-leading industrial distribution business in NZ…',
     flagged: false,
     edited: true,
   },

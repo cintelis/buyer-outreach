@@ -1,4 +1,4 @@
-// Native mobile experience — Velocity Capital · Buyer Outreach Platform.
+// Native mobile experience — Buyer Outreach Platform.
 //
 // This is a DEDICATED mobile app tree (not a responsive reflow of the desktop).
 // app.jsx swaps to <MobileApp/> below 768px. Patterns are modelled on
@@ -218,7 +218,7 @@ const MToday = ({ buyerOverrides, onTriage, onAdvance, onOpenMandate, theme, onT
           <img
             className="brand-logo"
             src="assets/velocity-logo-dark.png"
-            alt="Velocity Capital"
+            alt="Buyer Outreach Platform"
             style={{ height: 20, width: 'auto', maxWidth: 150, display: 'block' }}
           />
         }
@@ -236,7 +236,7 @@ const MToday = ({ buyerOverrides, onTriage, onAdvance, onOpenMandate, theme, onT
         {/* Greeting */}
         <div style={{ marginBottom: 16 }}>
           <div className="eyebrow" style={{ marginBottom: 3 }}>Tuesday, 26 May</div>
-          <div style={{ fontSize: 22, fontWeight: 600, letterSpacing: '-0.02em' }}>Good morning, Jeremy</div>
+          <div style={{ fontSize: 22, fontWeight: 600, letterSpacing: '-0.02em' }}>Good morning, Alex</div>
         </div>
 
         {/* Hero co-pilot card */}
@@ -847,7 +847,7 @@ const MBuyer = ({ buyer, onBack, onTriage, onAdvance }) => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
             {[
               ['24 May 11:32', 'Inbound reply', 'Classified Positive Interest 94%'],
-              ['19 May 09:11', 'E3 dispatched · James Holloway', 'Edited by Jeremy'],
+              ['19 May 09:11', 'E3 dispatched · James Holloway', 'Edited by Alex'],
               ['17 May 09:02', 'E2 dispatched · Eleanor', 'Approved 16 May 17:22'],
               ['13 May 14:10', 'Persona ranking confirmed', '5 contacts ranked'],
             ].map(([t, e, b], i) => (
@@ -1022,8 +1022,7 @@ Following up on my note from earlier this week. The vendor is a profitable speci
 Happy to send across, or to step through the strategic rationale in a 15-minute call.
 
 Best,
-Jeremy Pak
-Velocity Capital`;
+Alex Morgan`;
 
   return (
     <>
@@ -1271,11 +1270,11 @@ const MMore = ({ onNewMandate, onIngest, onDirectNda, theme, onToggleTheme }) =>
         borderRadius: 10, padding: 12, marginBottom: 14,
         display: 'flex', alignItems: 'center', gap: 12,
       }}>
-        <Avatar initials="JP" size={42} tone="brass"/>
+        <Avatar initials="AM" size={42} tone="brass"/>
         <div style={{ flex: 1 }}>
-          <div style={{ fontSize: 14, fontWeight: 500 }}>Jeremy Pak</div>
-          <div style={{ fontSize: 11.5, color: 'var(--text-3)' }}>Lead advisor · Velocity Capital</div>
-          <div style={{ fontSize: 11, color: 'var(--text-3)' }}>jeremy@velocitycapital.co.nz</div>
+          <div style={{ fontSize: 14, fontWeight: 500 }}>Alex Morgan</div>
+          <div style={{ fontSize: 11.5, color: 'var(--text-3)' }}>Lead advisor</div>
+          <div style={{ fontSize: 11, color: 'var(--text-3)' }}>alex@example.com</div>
         </div>
         <Icon name="chevron" size={13} style={{ color: 'var(--text-3)' }}/>
       </div>
@@ -1300,7 +1299,7 @@ const MMore = ({ onNewMandate, onIngest, onDirectNda, theme, onToggleTheme }) =>
       <div className="eyebrow" style={{ marginBottom: 8 }}>Integrations</div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 18 }}>
         <MoreRow icon="docusign" label="DocuSign" sub="Connected · 23 envelopes / 30d" status="ok"/>
-        <MoreRow icon="mail" label="Apollo · sending mailbox" sub="outreach@velocitycapital.co.nz" status="ok"/>
+        <MoreRow icon="mail" label="Apollo · sending mailbox" sub="outreach@example.com" status="ok"/>
         <MoreRow icon="file" label="OneDrive" sub="/VC-Mandates · 4 active folders" status="ok"/>
         <MoreRow icon="calendar" label="Microsoft Bookings" sub="Connected · 30-min default"/>
         <MoreRow icon="users" label="HubSpot CRM" sub="Toggle off · awaiting stand-up" status="off"/>
@@ -1320,7 +1319,7 @@ const MMore = ({ onNewMandate, onIngest, onDirectNda, theme, onToggleTheme }) =>
         fontSize: 11, color: 'var(--text-3)',
         lineHeight: 1.4,
       }}>
-        Velocity Capital · Buyer Outreach — front-end demonstration.<br/>
+        Buyer Outreach Platform — front-end demonstration.<br/>
         No backend connected; every action is simulated.
       </div>
     </div>
