@@ -117,7 +117,7 @@ flowchart LR
         HV["Hunter verifier"]
     end
     subgraph DISC["Discovery"]
-        GS["Google Search API"]
+        GS["Vertex AI<br/>Google Cloud"]
         LI["LinkedIn Sales Navigator<br/>manual only"]
     end
     subgraph OUT["Outreach &amp; signature"]
@@ -152,7 +152,7 @@ flowchart LR
 | **Hunter.io API** | Enrichment / verification | Enrichment tier 3 (fills remaining gaps) and email verifier 3 | API key |
 | **Clay.com** | Enrichment | Optional premium enrichment behind a HITL cost-control gate | API key / webhook |
 | **NeverBounce API** | Verification | Email verifier 2 — invoked when Apollo returns risky / unknown / catch-all | API key |
-| **Google Search API** | Discovery | LinkedIn URL discovery via fuzzy match | API key |
+| **Vertex AI (Google Cloud)** | Discovery | Grounded web search for LinkedIn URL discovery (fuzzy match) — Vertex AI Search / Google-grounded results | Service account (OAuth 2.0) |
 | **LinkedIn Sales Navigator** | Discovery | Manual profile workflow only — no API integration | n/a |
 | **DocuSign eSignature REST API** | Signature | NDA envelopes, automated reminders, and two-party countersignature routing | OAuth (JWT grant) |
 | **Microsoft OneDrive (Graph API)** | Documents | Mandate-specific source folder for the Flyer PDF, NDA PDF, and NDA Word document; stores the canonical NDA template used for diffing | OAuth (delegated) |
