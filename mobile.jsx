@@ -215,12 +215,17 @@ const MToday = ({ buyerOverrides, onTriage, onAdvance, onOpenMandate, theme, onT
     <>
       <MTopBar
         title={
-          <img
-            className="brand-logo"
-            src="assets/velocity-icon-dark.png"
-            alt="Buyer Outreach Platform"
-            style={{ height: 26, width: 'auto', display: 'block' }}
-          />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
+            <img
+              className="brand-logo"
+              src="assets/velocity-icon-dark.png"
+              alt="City Capital"
+              style={{ height: 24, width: 'auto', display: 'block' }}
+            />
+            <span style={{ fontSize: 17, fontWeight: 600, color: 'var(--accent)', letterSpacing: '-0.02em', lineHeight: 1, whiteSpace: 'nowrap' }}>
+              City Capital
+            </span>
+          </div>
         }
         trailing={<>
           <MIconBtn icon="search"/>

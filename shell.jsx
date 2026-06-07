@@ -32,13 +32,18 @@ const Sidebar = ({ nav, setNav, badges, onNewMandate, onDirectNda, mobileOpen, o
         padding: '4px 6px', cursor: 'pointer',
         textAlign: 'left',
       }}>
-        {/* Brand wordmark (teal on transparent) */}
-        <img
-          className="brand-logo"
-          src="assets/velocity-icon-dark.png"
-          alt="Buyer Outreach Platform"
-          style={{ height: 30, width: 'auto', display: 'block' }}
-        />
+        {/* Brand wordmark: icon mark + "City Capital" (teal, matches --accent) */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <img
+            className="brand-logo"
+            src="assets/velocity-icon-dark.png"
+            alt="City Capital"
+            style={{ height: 26, width: 'auto', display: 'block' }}
+          />
+          <span style={{ fontSize: 19, fontWeight: 600, color: 'var(--accent)', letterSpacing: '-0.02em', lineHeight: 1, whiteSpace: 'nowrap' }}>
+            City Capital
+          </span>
+        </div>
         <div style={{ fontSize: 10, color: 'var(--text-3)', letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 500, paddingLeft: 2 }}>
           Buyer Outreach
         </div>
