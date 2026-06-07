@@ -35,9 +35,9 @@ const Sidebar = ({ nav, setNav, badges, onNewMandate, onDirectNda, mobileOpen, o
         {/* Brand wordmark (teal on transparent) */}
         <img
           className="brand-logo"
-          src="assets/velocity-logo-dark.png"
+          src="assets/velocity-icon-dark.png"
           alt="Buyer Outreach Platform"
-          style={{ height: 24, width: 'auto', maxWidth: 184, display: 'block' }}
+          style={{ height: 30, width: 'auto', display: 'block' }}
         />
         <div style={{ fontSize: 10, color: 'var(--text-3)', letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 500, paddingLeft: 2 }}>
           Buyer Outreach

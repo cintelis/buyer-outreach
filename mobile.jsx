@@ -217,9 +217,9 @@ const MToday = ({ buyerOverrides, onTriage, onAdvance, onOpenMandate, theme, onT
         title={
           <img
             className="brand-logo"
-            src="assets/velocity-logo-dark.png"
+            src="assets/velocity-icon-dark.png"
             alt="Buyer Outreach Platform"
-            style={{ height: 20, width: 'auto', maxWidth: 150, display: 'block' }}
+            style={{ height: 26, width: 'auto', display: 'block' }}
           />
         }
         trailing={<>

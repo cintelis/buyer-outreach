@@ -153,9 +153,9 @@ a { color: inherit; text-decoration: none; }
 
 .serif { font-family: var(--font-serif); letter-spacing: -0.01em; }
 
-/* The brand logo is a single mid-teal on transparent. It reads on
+/* The brand icon is a single mid-teal on transparent. It reads on
    the light theme as-is; on the dark navy theme a small brightness/saturation
-   lift pulls it toward the brighter accent so the wordmark stays crisp. */
+   lift pulls it toward the brighter accent so the mark stays crisp. */
 [data-theme="dark"] .brand-logo,
 [data-theme="dark"] .brand-mark { filter: brightness(1.45) saturate(1.05); }
 
