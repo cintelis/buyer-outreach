@@ -12,8 +12,8 @@ email send and every client-facing decision.
 > third-party services it connects to in production); in this prototype those
 > integrations are **simulated** with mock data.
 
-The product is designed to be **white-labelled and resold** across advisory
-teams, so nothing in the UI is tied to a specific firm.
+The product is designed to be **white-labelled** for advisory teams, so nothing
+in the UI is tied to a specific firm.
 
 ## What it does
 
