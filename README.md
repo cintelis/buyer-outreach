@@ -15,6 +15,56 @@ email send and every client-facing decision.
 The product is designed to be **white-labelled** for advisory teams, so nothing
 in the UI is tied to a specific firm.
 
+## Screenshots
+
+Captured from the live prototype at
+[buyer-outreach.eqr.vc](https://buyer-outreach.eqr.vc/).
+
+### Overview
+
+![Overview screen](assets/screenshots/overview.png)
+
+The advisor's home: portfolio-level KPIs (active mandates, buyers in sequence,
+reply and meeting rates) across the top, a card per active mandate showing its
+pipeline funnel and progress, an "on hold" tray, and the AI co-pilot rail on the
+right surfacing items that need attention.
+
+### Review queue
+
+![Review queue screen](assets/screenshots/queue.png)
+
+The Human-in-the-Loop send gate. Every outbound email is staged here for advisor
+approval — the left list shows queued recipients with state and per-contact
+flags, while the detail pane renders the fully template-filled message with merge
+fields resolved, ready to **Approve & queue**, edit, or hold.
+
+### Reply triage
+
+![Reply triage screen](assets/screenshots/triage.png)
+
+Inbound replies auto-classified into buckets (e.g. positive interest, not
+interested, out-of-office). Any human reply auto-pauses that buyer's cadence and
+drops the message here, where the advisor confirms or overrides the suggested
+classification before it advances the buyer's state.
+
+### Enrichment
+
+![Enrichment screen](assets/screenshots/enrichment.png)
+
+The contact-data view and HITL cost gate. Coverage rings show how much contact
+data the automatic vendor waterfall (RocketReach → Apollo → Hunter) has filled,
+and the **Clay enrichment gate** quotes the projected cost of optional premium
+enrichment so the advisor can approve or skip the spend per mandate.
+
+### NDA workflow
+
+![NDA workflow screen](assets/screenshots/nda.png)
+
+NDA execution and text-diff review. The left rail tracks buyers by signing path
+(DocuSign, wet-ink, Word redline); the detail pane shows a side-by-side diff of
+the buyer's returned document against the original template, flagging any change
+outside the tokenised entity field for legal review before countersignature.
+
 ## What it does
 
 A mandate moves through a single, auditable pipeline:
